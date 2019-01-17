@@ -22,7 +22,7 @@ if __name__=="__main__":
     driver=webdriver.Firefox()
     a=LoginPage(driver)
     a.open("https://direct.cmfchina.com/ECService/ECLogin/login.jsp")
-    a.input_user('13068702992')
+    a.input_user('**********')
     a.input_psw('1111112')
     #a.input_psw('111112')
     a.click_log_but()
