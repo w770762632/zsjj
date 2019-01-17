@@ -2,7 +2,7 @@
 from selenium import webdriver
 from common.base import BasePage
 
-login_url='https://direct.cmfchina.com/ECService/ECLogin/login.jsp'
+login_url='https://direct.******.com/ECService/ECLogin/login.jsp'
 class LoginPage(BasePage):
     user_loc=('id','loginNo')
     psw_loc=('xpath','.//div[@class="loginContTwoBox"]/input[2]')
@@ -21,7 +21,7 @@ class LoginPage(BasePage):
 if __name__=="__main__":
     driver=webdriver.Firefox()
     a=LoginPage(driver)
-    a.open("https://direct.cmfchina.com/ECService/ECLogin/login.jsp")
+    a.open("https://direct.******.com/ECService/ECLogin/login.jsp")
     a.input_user('**********')
     a.input_psw('********')
     a.click_log_but()
