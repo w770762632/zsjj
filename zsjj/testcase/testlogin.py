@@ -4,11 +4,11 @@ from selenium import webdriver
 import unittest
 from page.loginpage import LoginPage,login_url
 from common.readExcel import ExcelUtil
-# testdata1 = {'user':'13068702992','psw':'1111112','exp':u'吴泽敏'}
-# testdata2 = {'user':'13068702992','psw':'111112','exp':''}
+# testdata1 = {'user':'********','psw':'********','exp':u'********'}
+# testdata2 = {'user':'********','psw':'********','exp':''}
 # data =  [
-#         {'user':'13068702992','psw':'1111112','exp':u'吴泽敏'},
-#         {'user':'13068702992','psw':'111112','exp':''}
+#         {'user':'********','psw':'********','exp':u'********'},
+#         {'user':'********','psw':'********','exp':''}
 #         ]
 data = ExcelUtil("E:\\zsjj\\common\\testdata.xls")
 testdata = data.dict_data()
@@ -39,7 +39,7 @@ class TestLogin(unittest.TestCase):
         result = self.login(**data)
         print result
         print type(result)
-        # exp=u'吴泽敏'
+        # exp=u'********'
         # print type(exp)
         #断言
         self.assertTrue(result)
