@@ -23,7 +23,6 @@ if __name__=="__main__":
     a=LoginPage(driver)
     a.open("https://direct.cmfchina.com/ECService/ECLogin/login.jsp")
     a.input_user('**********')
-    a.input_psw('1111112')
-    #a.input_psw('111112')
+    a.input_psw('********')
     a.click_log_but()
 
